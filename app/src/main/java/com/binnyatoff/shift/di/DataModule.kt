@@ -12,7 +12,6 @@ import javax.inject.Singleton
 @Module
 class DataModule {
     @Provides
-    @Singleton
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor {
         val httpLoggingInterceptor = HttpLoggingInterceptor()
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BASIC
@@ -20,7 +19,6 @@ class DataModule {
     }
 
     @Provides
-    @Singleton
     fun providesRetrofit(httpLoggingInterceptor: HttpLoggingInterceptor):Retrofit{
         val httpClient = OkHttpClient.Builder()
             .addInterceptor(httpLoggingInterceptor)

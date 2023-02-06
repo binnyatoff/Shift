@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Shift</string>
+    <string name="card_number">Card Number</string>
+    <string name="clear_all">Clear All</string>
+    <string name="history">История запросов</string>
+    <string name="info">Информация</string>
+    <string name="binText">Введите BIN карты</string>
+    <string name="send">Send</string>
+
 </resources>
